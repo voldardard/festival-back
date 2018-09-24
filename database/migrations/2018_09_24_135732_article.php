@@ -19,8 +19,8 @@ class Article extends Migration
             $table->string('name', 255);
             $table->longText('description');
             $table->double('price');
-            $table->unsignedInteger('fk_category_id');
-            $table->foreign('fk_category_id')->references('id')->on('article_category');
+            $table->unsignedInteger('fk_article_category_id');
+            $table->foreign('fk_article_category_id')->references('id')->on('article_category');
         });
     }
 
