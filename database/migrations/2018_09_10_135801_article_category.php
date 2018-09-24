@@ -13,7 +13,11 @@ class ArticleCategory extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('article_category', function (Blueprint $table) {
+            $table->increments('id')->unique();
+            $table->timestamps();
+            $table->string('name', 255);
+        });
     }
 
     /**

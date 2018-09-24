@@ -13,7 +13,11 @@ class ArticleSize extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('article_size', function (Blueprint $table) {
+            $table->increments('id')->unique();
+            $table->timestamps();
+            $table->string('name', 10);
+        });
     }
 
     /**

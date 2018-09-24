@@ -21,7 +21,7 @@ class Order extends Migration
             $table->foreign('fk_status_id')->references('id')->on('status');
             $table->string('name', 60);
             $table->string('fsname', 60);
-            $table->string('adress', 100);
+            $table->string('address', 100);
             $table->string('npa', 6);
             $table->string('city', 40);
             $table->email('email', 60);
