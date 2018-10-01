@@ -16,7 +16,7 @@ class Order extends Migration
         Schema::create('order', function (Blueprint $table) {
             $table->increments('id')->unique();
             $table->timestamps();
-            $table->nullableTimestamps('paid_date')->default(NULL);
+            $table->nullableTimestamps('paid_date');
             $table->unsignedInteger('fk_status_id');
             $table->foreign('fk_status_id')->references('id')->on('status');
             $table->string('name', 60);
