@@ -13,7 +13,11 @@ class OrderStatus extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('order_status', function (Blueprint $table) {
+            $table->increments('id')->unique();
+            $table->timestamps();
+            $table->string('name', 255);
+        });
     }
 
     /**

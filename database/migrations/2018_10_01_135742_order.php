@@ -18,7 +18,7 @@ class Order extends Migration
             $table->timestamps();
             $table->datetime('paid_date')->nullable();
             $table->unsignedInteger('fk_status_id');
-            $table->foreign('fk_status_id')->references('id')->on('status');
+            $table->foreign('fk_status_id')->references('id')->on('order_status');
             $table->string('name', 60);
             $table->string('fsname', 60);
             $table->string('address', 100);
