@@ -13,7 +13,12 @@ class ArticleOrder extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('p_article_order', function (Blueprint $table) {
+            $table->unsignedInteger('order_id');
+            $table->foreign('order_id')->references('id')->on('order');
+            $table->unsignedInteger('article_id');
+            $table->foreign('article_id')->references('id')->on('article');
+        });
     }
 
     /**
