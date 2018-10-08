@@ -78,7 +78,9 @@ return [
     |
     */
 
-    'locale' => 'fr',
+    'locale' => NULL,
+
+    'languages' => [array('complete'=>'Français', 'locale'=>'fr'), array('complete'=>'English', 'locale'=>'en'), array('complete'=>'Italiano', 'locale'=>'it'), array('complete'=>'Deutsch', 'locale'=>'de')],
 
     /*
     |--------------------------------------------------------------------------

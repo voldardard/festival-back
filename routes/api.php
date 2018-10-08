@@ -12,7 +12,30 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+$languages = Config::get('app.languages');
+$locale = \Request::segment(2);
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+foreach ($languages as $key => $value){
+    if (($locale == $value['locale'])) {
+        \App::setLocale($locale);
+    }
+}
+ if(empty(Config::get('app.locale'))) {
+    $locale = Config::get('app.fallback_locale');
+    \App::setLocale($locale);
+}
+
+Route::group(['prefix' => Config::get('app.locale'), 'middleware'=>'cors' ], function () {
+
+
+
+    Route::get('test', function ()    {
+        dd("The language is: " . Config::get('app.locale'));
+    });
+
+    Route::get('articles', 'Shop\Shop@getAllArticles');
+
+
+
+
 });

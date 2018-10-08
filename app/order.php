@@ -35,4 +35,11 @@ class order extends Model
     protected $hidden = [
 
     ];
+
+    public function article()
+    {
+        return $this->belongsToMany('App\article', 'p_article_order',
+            'article_id', 'order_id');
+    }
+
 }

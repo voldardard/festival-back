@@ -34,4 +34,10 @@ class article_size extends Model
     protected $hidden = [
 
     ];
+
+    public function article()
+    {
+        return $this->belongsToMany('App\article', 'p_size_article',
+            'article_id', 'size_id');
+    }
 }
