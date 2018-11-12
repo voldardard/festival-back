@@ -32,7 +32,7 @@ return [
     'size'=>'Size',
     'quantity'=>'Quantity',
     'askSthg'=>'A question ?',
-    'askSmthParticular'=>'Ask something particular',
+    'askSmthParticular'=>'Ask something particular ?',
     'contactus'=>'Contact us',
     'FindAnOrder'=>'Find an order',
     'email'=>'Email',

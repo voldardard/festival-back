@@ -31,7 +31,7 @@ return [
     'size'=>'Taille',
     'quantity'=>'Quantité',
     'askSthg'=>'Une question ?',
-    'askSmthParticular'=>'Faire une demande particulière',
+    'askSmthParticular'=>'Faire une demande particulière ?',
     'contactus'=>'Contactez-nous',
     'FindAnOrder'=>'Trouver une commande',
     'email'=>'Email',
