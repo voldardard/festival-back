@@ -33,9 +33,16 @@ Route::group(['prefix' => Config::get('app.locale'), 'middleware'=>'cors' ], fun
         dd("The language is: " . Config::get('app.locale'));
     });
 
+    Route::get('lang/interface', 'Controller@getLangageInterface');
+
+    /*
+     * Shop
+     */
+    
+    Route::get('products', 'Shop\Shop@getAllArticles');
     Route::get('articles', 'Shop\Shop@getAllArticles');
-
-
+    Route::get('article/{id}', 'Shop\Shop@getArticleByID')->where('id', '[0-9]+');
+    Route::get('category/{id}/articles', 'Shop\Shop@getCategoryArticles')->where('id', '[0-9]+');
 
 
 });

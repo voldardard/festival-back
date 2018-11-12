@@ -45,8 +45,5 @@ class article extends Model
         return $this->belongsToMany('App\size', 'p_size_article',
             'article_id', 'size_id');
     }
-    public function category()
-    {
-        return $this->belongsTo('App\article_category','id');
-    }
+
 }

@@ -1,0 +1,45 @@
+<?php
+
+return [
+
+    'festival_name' => 'Festival Epsic',
+    'festival_description' => 'Festival at Vidy\'s Pyramid',
+    'festival_duration' => 'From 5th to 6th July 2019',
+    'festival_home'=>'Home',
+    'program' =>'Program',
+    'artists' => 'Artists',
+    'infos'=>'Quick info',
+    'info_description'=>'To eat, Transport ...',
+    'shop' => 'Shop',
+    'sponsor'=>'Sponsors',
+    'contact'=>'Contact',
+    'transport'=>'Transports',
+    'access' => 'Access',
+    'buy'=>'Buy',
+    'shopbag_content'=> 'Shopbag content',
+    'shopbag_clear'=> 'Clear Shopbag',
+    'shopbag_remove'=>'Remove from Shopbag',
+    'shopbag_recap'=>'Summary',
+    'shopbag_total_products'=>'Product\'s total price',
+    'shopbag_total'=>'Final price',
+    'shopbag_shipping'=>'Shipping fees',
+    'shopbag_empty'=>'Empty Shopbag',
+    'confirm'=>'Confirm',
+    'myorders'=>'My Orders',
+    'backToShop'=>'Back to Shop',
+    'chooseASize'=>'Choose a size',
+    'cancel' => 'Cancel',
+    'size'=>'Size',
+    'quantity'=>'Quantity',
+    'askSthg'=>'A question ?',
+    'askSmthParticular'=>'Ask something particular',
+    'contactus'=>'Contact us',
+    'FindAnOrder'=>'Find an order',
+    'email'=>'Email',
+    'OrderNr'=>'Order Nr',
+    '5thjuly'=>'5th of July',
+    '6thjuly'=>'6th of July',
+
+
+
+];

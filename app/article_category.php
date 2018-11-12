@@ -34,4 +34,8 @@ class article_category extends Model
     protected $hidden = [
 
     ];
+    public function article()
+    {
+        return $this->hasmany('App\article', 'id');
+    }
 }
