@@ -32,4 +32,8 @@ class Controller extends BaseController
         $array = Lang::get('interfaces');
         return $array;
     }
+    public function getLangageInfo(){
+        $array = Lang::get('info');
+        return $array;
+    }
 }

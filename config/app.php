@@ -80,7 +80,7 @@ return [
 
     'locale' => NULL,
 
-    'languages' => [array('complete'=>'Français', 'locale'=>'fr'), array('complete'=>'English', 'locale'=>'en'), array('complete'=>'Italiano', 'locale'=>'it'), array('complete'=>'Deutsch', 'locale'=>'de')],
+    'languages' => [array('label'=>'Français', 'value'=>'fr'), array('label'=>'English', 'value'=>'en'), array('label'=>'Italiano', 'value'=>'it'), array('label'=>'Deutsch', 'value'=>'de')],
 
     /*
     |--------------------------------------------------------------------------

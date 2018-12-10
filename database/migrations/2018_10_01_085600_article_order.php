@@ -18,6 +18,8 @@ class ArticleOrder extends Migration
             $table->foreign('order_id')->references('id')->on('order');
             $table->unsignedInteger('article_id');
             $table->foreign('article_id')->references('id')->on('article');
+            $table->unsignedInteger('size_id');
+            $table->foreign('size_id')->references('id')->on('article_size');
         });
     }
 
