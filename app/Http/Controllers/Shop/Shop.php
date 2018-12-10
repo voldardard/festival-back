@@ -49,6 +49,14 @@ class Shop extends Controller
             ->join('article_size', 'article_size.id', '=', 'p_size_article.size_id')->where('p_size_article.article_id', '=', $id)->get(array('article_size.name as label','article_size.id as value'));
 
 
+        foreach ($size as $key => $value){
+            //print_r($value);
+            $array['label']=$value->label;
+            $array['value']=$value->value;
+
+            //unset($size[$key]->label);
+            $size[$key]->value = $array;
+        }
         foreach ($article as $key=> $value){
             $article[$key]->name = self::getTranslation($value->name);
             $article[$key]->description = self::getTranslation($value->description);

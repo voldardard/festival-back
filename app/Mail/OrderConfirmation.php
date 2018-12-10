@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Lang;
-use App\Http\Controllers\Api\V1\ordersController;
+//use App\Http\Controllers\Api\V1\ordersController;
 
 class orderConfirmation extends Mailable
 {
@@ -45,9 +45,9 @@ class orderConfirmation extends Mailable
      */
     public function build()
     {
-        $pdf=new ordersController;
-        return $this->from('no-reply@coatandclothes.shop')
-            ->attachData($pdf->generateOrderPDF($this->obj->id), 'bill.pdf')
+        //$pdf=new ordersController;
+        return $this->from('festivalVidy@robinsons.ch')
+            //->attachData($pdf->generateOrderPDF($this->obj->id), 'bill.pdf')
             ->subject($this->subject)
             ->view($this->choosedView)
             ->with(
