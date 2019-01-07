@@ -105,13 +105,17 @@ class Shop extends Controller
         if (count($order)==1){
             $order=  \DB::table('order')->join('order_status', 'order.fk_status_id', '=', 'order_status.id')->where('order.id', '=', $id)->get(['order.id', 'order.created_at', 'order.updated_at', 'order.paid_date', 'order_status.name', 'order.name', 'order.fsname', 'order.address', 'order.npa', 'order.city', 'order.email', 'order_status.name as status']);
             $order[0]->status=self::getTranslation($order[0]->status);
-            $order[0]->articles = \DB::table('p_article_order')->where('order_id', '=', $id)->get(['article_id', 'size_id']);
+            $order[0]->articles = \DB::table('p_article_order')->where('order_id', '=', $id)->get();
+
             foreach ($order[0]->articles as $key => $value){
-                $article=\DB::table('article')->where('id', '=', $value->article_id)->get(['name','description', 'price']);
+                $article=\DB::table('article')->where('id', '=', $value->article_id)->get(['name','description', 'price', 'image_path']);
                 $size=\DB::table('article_size')->where('id', '=', $value->size_id)->get(['name']);
+                $quantity=$value->quantity;
+                //$quantity=10;
                 //return $size;
                 $order[0]->articles[$key]=$article[0];
                 $order[0]->articles[$key]->size=$size[0]->name;
+                $order[0]->articles[$key]->quantity=$quantity;
                 $order[0]->articles[$key]->name=self::getTranslation($order[0]->articles[$key]->name);
                 $order[0]->articles[$key]->description=self::getTranslation($order[0]->articles[$key]->description);
 
@@ -137,6 +141,8 @@ class Shop extends Controller
             'email'=>'required|email|max:60',
             'articles.*.size_id'=>'required|int|max:10',
             'articles.*.article_id'=>'required|int|max:10',
+            'articles.*.size_id'=>'required|int|max:10',
+            'articles.*.quantity'=>'required|int|max:10',
             'paid'=>'required|boolean'
         ]);
         if($input['paid'])$paid=date('Y-m-d H:i:s'); else $paid=NULL;
