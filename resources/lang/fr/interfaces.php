@@ -2,7 +2,7 @@
 
 return [
 
-    'festival_name' => 'Festival de l\'Epsic',
+    'festival_name' => 'Fest\' Hip-Hop',
     'festival_description' => 'Festival aux Pyramides de Vidy',
     'festival_duration' => 'Du 5 au 6 Juillet 2019',
     'festival_home'=>'Accueil',
@@ -37,6 +37,10 @@ return [
     'shop_FindAnOrder'=>'Trouver une commande',
     'shop_OrderNr'=>'Numéro de commande:',
     'shop_orderContent'=>'Contenu de la commande',
+    'shop_getInYourInfos'=>'Entrez vos informations',
+    'shop_payementMethod'=>'Moyen de paiement',
+    'shop_bill'=>'Facture',
+    'shop_paidInKind' => 'Nature',
 
     'cancel' => 'Annuler',
     'confirm'=>'Confirmer',
@@ -51,7 +55,7 @@ return [
     'user_npa'=>"NPA",
     'user_locality'=>'Localité',
     'user_email'=>'Email',
-    'user_adress'=>'Addresse',
+    'user_adress'=>'Adresse',
 
 
 

@@ -33,7 +33,7 @@ Route::pattern('slug', '[a-z0-9-]+');
 Route::pattern('username', '[a-z0-9_-]{3,16}');
 */
 Route::get('order', 'Shop\Shop@addOrder');
-Route::group(['prefix' => Config::get('app.locale'), 'middleware'=>'cors' ], function () {
+Route::group(['prefix' => Config::get('app.locale')], function () {
 
 
 

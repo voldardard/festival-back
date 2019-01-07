@@ -17,6 +17,12 @@ class Cors
     {
 	        return $next($request)
 			->header('Access-Control-Allow-Origin', '*')
-			->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+                //PUT, PATCH, DELETE, POST, GET, OPTIONS, HEAD
+            //->header('Content-Type', 'application/json;charset=UTF-8')
+            //->header('Access-Control-Max-Age', '1728000')
+            //->header('Access-Control-Allow-Credentials', true)
+			->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, HEAD')
+            ->header('Access-Control-Allow-Headers', 'Origin, Host, Refer, Connection, X-Requested-With, Content-Type, Accept, Authorization, Content-Range, Content-Disposition, Content-Description');
+
     }
 }

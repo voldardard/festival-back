@@ -2,7 +2,7 @@
 
 return [
 
-    'festival_name' => 'Festival Epsic',
+    'festival_name' => 'Fest\' Hip-Hop',
     'festival_description' => 'Festival at Vidy\'s Pyramid',
     'festival_duration' => 'July 5th to 6th 2019',
     'festival_home'=>'Home',
@@ -37,6 +37,10 @@ return [
     'shop_FindAnOrder'=>'Find an order',
     'shop_OrderNr'=>'Order Nr:',
     'shop_orderContent'=>'Order Content',
+    'shop_getInYourInfos'=>'Get in your informations',
+    'shop_payementMethod'=>'Payment Method',
+    'shop_bill'=>'Bill',
+    'shop_paidInKind' => 'in Kind',
 
     'cancel' => 'Cancel',
     'confirm'=>'Confirm',

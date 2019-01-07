@@ -136,8 +136,10 @@ class Shop extends Controller
             'city'=>'required|regex:/(^[A-Za-zâàéèïäçüö\- ]+$)+/|max:40',
             'email'=>'required|email|max:60',
             'articles.*.size_id'=>'required|int|max:10',
-            'articles.*.article_id'=>'required|int|max:10'
+            'articles.*.article_id'=>'required|int|max:10',
+            'paid'=>'required|boolean'
         ]);
+        if($input['paid'])$paid=date('Y-m-d H:i:s'); else $paid=NULL;
         if($validate->fails()){
             abort(403, $validate->errors());
         }
@@ -148,6 +150,7 @@ class Shop extends Controller
             'city'=>$input['city'],
             'npa'=>$input['npa'],
             'email'=>$input['email'],
+            'paid_date'=>$paid,
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
@@ -157,7 +160,7 @@ class Shop extends Controller
         \DB::table('p_article_order')->insert($input['articles']);
 
 
-        Mailer::sendOrderConfirmation($orderId, $input['email']);
+        //Mailer::sendOrderConfirmation($orderId, $input['email']);
 
         $input['status_code']=200;
         return response()->json($input);
