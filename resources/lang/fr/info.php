@@ -15,6 +15,8 @@ return [
         <p><b>Nomad Food: </b>Hamburger & Tacos, <a href="http://www.nomad-food.ch/">http://www.nomad-food.ch/</a></p>
         <br>
         <p><b>Un stand de boisson vous servira de nombreuses minérales et bières !</b></p>
-        <p><b>Amstein: </b>Boissons, <a href="https://www.amstein.ch/">https://www.amstein.ch/</a></p>'
+        <p><b>Amstein: </b>Boissons, <a href="https://www.amstein.ch/">https://www.amstein.ch/</a></p>',
+    'parking'=>'',
+    'tarifs'=>''
 
 ];

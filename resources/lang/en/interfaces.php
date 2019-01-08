@@ -52,7 +52,7 @@ return [
     'user_personnalInformation'=>'Personnal information',
     'user_name'=>'Name',
     'user_fsname'=>'First name',
-    'user_streetNr'=>'Street Nr:',
+    'user_streetNr'=>'Street Nr',
     'user_npa'=>"NPA",
     'user_locality'=>'Locality',
     'user_email'=>'Email',

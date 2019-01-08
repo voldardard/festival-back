@@ -8,13 +8,15 @@ return [
         <p>Bus access:</p>
         <p><b>Line 1</b>: From Lausanne train station, take bus 1 to the Maladière stop, Lausanne.</p>
         <p><b>Line 2</b>: From Lausanne train station, take the M2 to Ouchy Olympique (last metro at around 00:30) then take bus 2 to the Théâtre de Vidy stop.</p>
-        <p><b>Line 6</b>: Depuis la gare de Lausanne, prendre le M2 jusqu’à l’arrêt Lausanne-Flon (dernier métro à env. 00:30), puis marcher jusqu’à l’arrêt Bel-Air pour y prendre le bus 6 jusqu’à l’arrêt Maladière, Lausanne.</p>
-        <p>Plus d\'informations sur <a href="https://www.t-l.ch/">https://www.t-l.ch/</a></p>',
-    'food'=>'<p><b>Deux Food-Trucks seront présents !</b></p>
+        <p><b>Line 6</b>: From Lausanne train station, take the M2 to the Lausanne-Flon stop (last metro at about 00:30), then walk to the Bel-Air stop to take bus 6 to Maladière, Lausanne.</p>
+        <p>More informations on <a href="https://www.t-l.ch/">https://www.t-l.ch/</a></p>',
+    'food'=>'<p><b>Two Food Trucks will be there!</b></p>
         <p><b>Aventura Pizza: </b>Pizzas, <a href="http://www.aventurapizza.ch/">http://www.aventurapizza.ch/</a></p>
         <p><b>Nomad Food: </b>Hamburger & Tacos, <a href="http://www.nomad-food.ch/">http://www.nomad-food.ch/</a></p>
         <br>
-        <p><b>Un stand de boisson vous servira de nombreuses minérales et bières !</b></p>
-        <p><b>Amstein: </b>Boissons, <a href="https://www.amstein.ch/">https://www.amstein.ch/</a></p>'
+        <p><b>A beverage stand will serve you many minerals and beers!</b></p>
+        <p><b>Amstein: </b>Drinks <a href="https://www.amstein.ch/">https://www.amstein.ch/</a></p>',
+    'parking'=>'',
+    'tarifs'=>''
 
 ];
