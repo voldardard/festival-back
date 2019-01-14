@@ -19,6 +19,7 @@ return [
     'festival_6thjuly'=>'6 juillet',
     'festival_restoration'=>'Restauration',
     'festival_rules'=>'Règlement',
+    'festival_parking' => "Parking",
 
     'shopbag_content'=> 'Contenu du panier',
     'shopbag_clear'=> 'Vider le panier',
