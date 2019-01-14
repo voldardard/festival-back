@@ -17,6 +17,9 @@ return [
         <p><b>A beverage stand will serve you many minerals and beers!</b></p>
         <p><b>Amstein: </b>Drinks <a href="https://www.amstein.ch/">https://www.amstein.ch/</a></p>',
     'parking'=>'',
-    'tarifs'=>''
+    'tarifs'=>'',
+    'rules'=>'<p><b>Please note the following indications!</b></p>
+        <p>The Fest\'HipHop festival takes place at the Pyramids of Vidy in Lausanne.</p>
+        <p>Ce festival est libre d\'accès et se déroule dans un espace public, nous vous demandons de bien vouloir respecter le bien-être et la sécurité d\'autrui dans l\'enceinte du festival, adoptez un comportement fair-play et responsable !</p>'
 
 ];

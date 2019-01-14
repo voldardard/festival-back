@@ -4,7 +4,7 @@ return [
 
     'festival_name' => 'Fest\' Hip-Hop',
     'festival_description' => 'Festival aux Pyramides de Vidy',
-    'festival_duration' => 'Du 5 au 6 Juillet 2019',
+    'festival_duration' => '6 Juillet 2019',
     'festival_home'=>'Accueil',
     'festival_program' =>'Programme',
     'festival_artists' => 'Artistes',
@@ -17,6 +17,8 @@ return [
     'festival_contactus'=>'Contactez-nous',
     'festival_5thjuly'=>'5 juillet',
     'festival_6thjuly'=>'6 juillet',
+    'festival_restoration'=>'Restauration',
+    'festival_rules'=>'Règlement',
 
     'shopbag_content'=> 'Contenu du panier',
     'shopbag_clear'=> 'Vider le panier',

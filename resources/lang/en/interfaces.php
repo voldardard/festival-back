@@ -4,7 +4,7 @@ return [
 
     'festival_name' => 'Fest\' Hip-Hop',
     'festival_description' => 'Festival at Vidy\'s Pyramid',
-    'festival_duration' => 'July 5th to 6th 2019',
+    'festival_duration' => 'July 6th 2019',
     'festival_home'=>'Home',
     'festival_program' =>'Program',
     'festival_artists' => 'Artists',
@@ -17,6 +17,8 @@ return [
     'festival_contactus'=>'Contact us',
     'festival_5thjuly'=>'5th of July',
     'festival_6thjuly'=>'6th of July',
+    'festival_restoration'=>'Restoration',
+    'festival_rules'=>'Rules',
 
     'shopbag_content'=> 'Shopbag content',
     'shopbag_clear'=> 'Clear Shopbag',

@@ -4,7 +4,7 @@ return [
 
     'festival_name' => 'Fest\' Hip-Hop',
     'festival_description' => 'Festival bei Vidy\'s Pyramiden',
-    'festival_duration' => 'Vom	5. bis 6. Juli 2019',
+    'festival_duration' => '6. Juli 2019',
     'festival_home'=>'Startseite',
     'festival_program' =>'Program',
     'festival_artists' => 'Künstler',
