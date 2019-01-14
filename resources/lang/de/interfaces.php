@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'festival_name' => 'Fest\' Hip-Hop',
     'festival_description' => 'Festival bei Vidy\'s Pyramiden',
     'festival_duration' => '6. Juli 2019',
@@ -51,9 +50,5 @@ return [
     'user_npa'=>"NPA",
     'user_locality'=>'Ort',
     'user_email'=>'Email',
-    'user_adress'=>'Adresse',
-
-
-
-
+    'user_adress'=>'Adresse'
 ];
