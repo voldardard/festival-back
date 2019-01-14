@@ -139,9 +139,9 @@ class Shop extends Controller
             'npa'=>'required|regex:/(^[0-9 ]+$)+/|max:40',
             'city'=>'required|regex:/(^[A-Za-zâàéèïäçüö\- ]+$)+/|max:40',
             'email'=>'required|email|max:60',
-            'articles.*.size_id'=>'required|int|max:10',
-            'articles.*.article_id'=>'required|int|max:10',
-            'articles.*.size_id'=>'required|int|max:10',
+            'articles.*.size_id'=>'required|int',
+            'articles.*.article_id'=>'required|int',
+            'articles.*.size_id'=>'required|int',
             'articles.*.quantity'=>'required|int|max:10',
             'paid'=>'required|boolean'
         ]);
