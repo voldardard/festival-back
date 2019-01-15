@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'festival_name' => 'Fest\' Hip-Hop',
     'festival_description' => 'Festival bei Vidy\'s Pyramiden',
     'festival_duration' => '6. Juli 2019',
@@ -17,6 +16,7 @@ return [
     'festival_contactus'=>'Kontaktieren Sie uns',
     'festival_5thjuly'=>'5. Juli',
     'festival_6thjuly'=>'6. Juli',
+    'festival_parking' => "Parking",
 
     'shopbag_content'=> 'Inhalt des Warenkorbs',
     'shopbag_clear'=> 'Warenkorb lehren',
@@ -37,6 +37,11 @@ return [
     'shop_FindAnOrder'=>'Eine bestellung finden',
     'shop_OrderNr'=>'Bestellnummer:',
     'shop_orderContent'=>'Inhalt der Bestellung',
+    'shop_orderSuccess'=>'Bestellung erstellt !',
+    'shop_getInYourInfos'=>'Füllen Sie Ihre Informationen aus',
+    'shop_payementMethod'=>'Zahlungsart',
+    'shop_bill'=>'Rechnung',
+    'shop_paidInKind' => 'in Art',
 
     'cancel' => 'Annulieren',
     'confirm'=>'Bestätigen',
@@ -51,9 +56,5 @@ return [
     'user_npa'=>"NPA",
     'user_locality'=>'Ort',
     'user_email'=>'Email',
-    'user_adress'=>'Adresse',
-
-
-
-
+    'user_adress'=>'Adresse'
 ];

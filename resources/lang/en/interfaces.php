@@ -19,6 +19,7 @@ return [
     'festival_6thjuly'=>'6th of July',
     'festival_restoration'=>'Restoration',
     'festival_rules'=>'Rules',
+    'festival_parking' => "Parking",
 
     'shopbag_content'=> 'Shopbag content',
     'shopbag_clear'=> 'Clear Shopbag',
