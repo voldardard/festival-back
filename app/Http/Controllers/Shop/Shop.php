@@ -166,7 +166,7 @@ class Shop extends Controller
         \DB::table('p_article_order')->insert($input['articles']);
 
 
-        //Mailer::sendOrderConfirmation($orderId, $input['email']);
+        Mailer::sendOrderConfirmation($orderId, $input['email']);
 
         $input['status_code']=200;
         return response()->json($input);
